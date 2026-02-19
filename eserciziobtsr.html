@@ -1,320 +1,326 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+   
 
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-
-      <link rel="stylesheet" href="./eserciziobtsr.css">
-</head>
-<body>
-    <nav class="nav-top container-fluid position-fixed top-0">
-        <div class="row align-items-center justify-content-between">
-        <div class="col-auto"><img class="logo mx-0" src="./media/THESPACE_CINEMA_Logo.svg.png" alt=""></div>
-        <div class="col-auto fw-bold"><a href="">FILM</a></div>
-       
-        <div class="col-auto  fw-bold dropdown"><a class="dropdown dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">GENERI </a><ul class="dropdown-menu">
-            <li><a class="dropdown-item py-2" href="#azione">AZIONE</a></li>
-            <li><a class="dropdown-item py-2" href="#horror">HORROR</a></li>
-            <li><a class="dropdown-item py-2" href="#commedia">COMMEDIA</a></li>
-        </ul>
-       </div>
-
-        <div class="col-auto  fw-bold"><a href="#position">DOVE SIAMO</a></div>
-        <div class="col-auto  fw-bold"><a href="">RECENSIONI</a></div>
-        <div class="col-auto"><button class="btn1 dropdown" data-bs-toggle="dropdown" aria-expanded="false">Richiedi la tua space-card!</button>
-        <ul class="dropdown-menu px-1">
-            <li class="dropdown-item gmail">Email <input type="text"></li>
-            <li class="dropdown-item">Numero <input type="number"></li>
-           <li> <button class="btn btn-cst" type="button" data-bs-toggle="modal" data-bs-target="#modale2">invia</button></li>
-        
-        
-        </ul>
-        </div>
-</div>
-    </nav>
-    <div class="modal fade" tabindex="-1" id="modale2">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header"><h1>La tua card arriverà a breve!</h1></div>
-                        <div class="modal-body">Riceverai tutte le istruzioni via email.</div>
-                        <div class="modal-footer"><button class="btn btn-cst" data-bs-dismiss="modal">Chiudi</button></div>
-                    </div>
-                </div>
-            </div>
-    <div class="sidebar dropdown-toggle">
-        <div class="col nav-cst">
-            <div class="item-navcol first"><a href="#lcn">LAVORA CON NOI</a></div>
-            <div class="item-navcol"><a href="">OFFERTE</a></div>
-            <div class="item-navcol"><a href="">PROGRAMMAZIONE</a></div>
-            <div class="item-navcol"><a href="">CONTATTI</a></div>
-    </div>
-        </div>
-        
-        <header class="container-fluid">
-            <div class="row vh-100 hero justify-content-center align-items-center my-4 fw-bolder">
-                <div class="col-12">
-            <h1 class="text-center">PROGRAMMAZIONE</h1>
-            </div>
-           </div>
-        </header>
-        <main class="mx-5">
-<section class="row mx-0 justify-content-center justify-content-around flex-wrap">
-    <h2 id="commedia">COMMEDIA</h2>
-    <article class="row art-cst justify-content-center my-5">
-        <h3>Loro Chi?</h3>
-        <div><img class="img-cst" src="./media/Lorochi.jpg" alt=""></div>
-        <div><h4 class="my-3 trama">Trama:</h4></div>
-        <div><p class="fw-normal">Il giovane David viene assunto a Trento da una compagnia per lavorare alla pubblicità di un nuovo prodotto. Quando un barista, Marcello, lo invita “per un’innocentissima carbonara” a casa di due bellissime ragazze, David si ritroverà stordito su un letto senza portafoglio, senza lavoro e senza più una fidanzata.</p></div>
-        <div><h4 class="info">INFORMAZIONI:</h4></div>
-        <div><p><b>Registi</b>: Fabio Bonifacci, Francesco Miccichè
-<b>Durata</b>: 1h 35m <br>
-<b>Sceneggiatura</b>: Fabio Bonifacci, Marco Giallini, Edoardo Leo</p></div>
-<div class="row justify-content-start orari px-1">
-    <h4 class="prog">Orari di programmazione:</h3>
-    <div class="col-4 col-cst">11:30/13:05</div>
-    <div class="col-4 col-cst">13:30/15:05</div>
-    <div class="col-4 col-cst">15:30/17:05</div>
-    <div class="col-4 col-cst">17:30/19:05</div>
-    <div class="col-4 col-cst">20:30/22:05</div>
-    <div class="col-4 col-cst">22:30/00:05</div>
-</div>
-
-
-
-
-    </article>
-      <article class="row art-cst justify-content-center my-5">
-        <h3>Quo vado</h3>
-        <div><img class="img-cst" src="./media/quovado.jpg" alt=""></div>
-        <div><h4 class="my-3 trama">Trama:</h4></div>
-        <div><p class="fw-normal">Un uomo che vive ancora con la famiglia, per timore dell'indipendenza, viene costretto a cambiare la propria vita e doversi adattare ad ogni lavoro, anche i più improbabili e pericolosi.</p></div>
-        <div><h4 class="info">INFORMAZIONI:</h4></div>
-        <div><b>Regista</b>: Gennaro Nunziante <br>
-<b>Durata</b>: 1h 26m
-<b>Budget</b>: 10 milioni EUR <br>
-<b>Sceneggiatura</b>: Checco Zalone, Gennaro Nunziante</p></div>
-<div class="row justify-content-start orari px-1">
-    <h4 class="prog">Orari di programmazione:</h3>
-    <div class="col-4 col-cst">11:30/13:05</div>
-    <div class="col-4 col-cst">13:30/15:05</div>
-    <div class="col-4 col-cst">15:30/17:05</div>
-    <div class="col-4 col-cst">17:30/19:05</div>
-    <div class="col-4 col-cst">20:30/22:05</div>
-    <div class="col-4 col-cst">22:30/00:05</div>
-</div>
-
-    </article>
-      <article class="row art-cst justify-content-center my-5">
-        <h3>Santo Cielo</h3>
-        <div><img class="img-cst" src="./media/ficarraepicone.jpg" alt=""></div>
-        <div><h4 class="my-3 trama">Trama:</h4></div>
-        <div><p class="fw-normal">Inviato sulla Terra con il compito di mettere incinta la donna prescelta a partorire un altro figlio di Dio, il goffo angelo Aristide finisce per toccare il grembo di Nicola, un professore di matematica siciliano.</p></div>
-        <div><h4 class="info">INFORMAZIONI:</h4></div>
-        <div><p><b>Registia</b>: Francesco Amato
-<b>Durata</b>: 1h 55m <br>
-<b>Sceneggiatura</b>: Francesco Amato, Valentino Picone</p></div>
-<div class="row justify-content-start orari px-1">
-    <h4 class="prog">Orari di programmazione:</h3>
-    <div class="col-4 col-cst">11:30/13:05</div>
-    <div class="col-4 col-cst">13:30/15:05</div>
-    <div class="col-4 col-cst">15:30/17:05</div>
-    <div class="col-4 col-cst">17:30/19:05</div>
-    <div class="col-4 col-cst">20:30/22:05</div>
-    <div class="col-4 col-cst">22:30/00:05</div>
-</div>
-
-    </article>
-</section>
-<section class="row justify-content-around justify-content-center">
-    <h2 id="azione">AZIONE</h2>
-    <article class="row art-cst justify-content-center my-5">
-      <h3>A Working Man</h3>
-        <div><img class="img-cst" src="./media/jason.jpg" alt=""></div>
-        <div><h4 class="my-3 trama">Trama:</h4></div>
-        <div><p class="fw-normal">Levon Cade, ex militare, ora operaio edile, cerca di salvare la figlia rapita del suo capo, che considera famiglia. La sua missione svela una rete di corruzione inaspettata.</p></div>
-        <div><h4 class="info">INFORMAZIONI:</h4></div>
-        <div><p><b>Regista</b>: David Ayer
-<b>Durata</b>: 1h 56m <br>
-<b>Budget</b>: 40 Milioni USD</p></div>
-<div class="row justify-content-start orari px-1">
-    <h4 class="prog">Orari di programmazione:</h3>
-    <div class="col-4 col-cst">11:30/13:05</div>
-    <div class="col-4 col-cst">13:30/15:05</div>
-    <div class="col-4 col-cst">15:30/17:05</div>
-    <div class="col-4 col-cst">17:30/19:05</div>
-    <div class="col-4 col-cst">20:30/22:05</div>
-    <div class="col-4 col-cst">22:30/00:05</div>
-</div>
-
-    </article>
-      <article class="row art-cst justify-content-center my-5">
-        <h3>Bad Boys for life</h3>
-        <div><img class="img-cst" src="./media/bad boys.jpg" alt=""></div>
-        <div><h4 class="my-3 trama">Trama:</h4></div>
-        <div><p class="fw-normal">Due poliziotti di vecchia scuola, Mike Lowrey e Marcus Burnett, fanno squadra con una unità d'élite per fermare le attività di un pericoloso criminale di Miami a capo del locale cartello della droga.</p></div>
-        <div><h4 class="info">INFORMAZIONI:</h4></div>
-        <div><b>Registi</b>: Adil El Arbi, Billal Fallah <br>
-<b>Durata</b>: 1h 53m <br>
-<b>Budget</b>: 90 milioni USD</div>
-<div class="row justify-content-start orari px-1">
-    <h4 class="prog">Orari di programmazione:</h3>
-    <div class="col-4 col-cst">11:30/13:05</div>
-    <div class="col-4 col-cst">13:30/15:05</div>
-    <div class="col-4 col-cst">15:30/17:05</div>
-    <div class="col-4 col-cst">17:30/19:05</div>
-    <div class="col-4 col-cst">20:30/22:05</div>
-    <div class="col-4 col-cst">22:30/00:05</div>
-</div>
-
-    </article>
-      <article class="row art-cst justify-content-center my-5">
-        <h3>Mad Max</h3>
-        <div><img class="img-cst" src="./media/madmax.jpg" alt=""></div>
-        <div><h4 class="my-3 trama">Trama:</h4></div>
-        <div><p class="fw-normal">Dopo una guerra nucleare, il mondo si è trasformato in un deserto e dell'umanità non è rimasto molto. Due ribelli in fuga potrebbero essere in grado di ristabilire l'ordine.</p></div>
-        <div><h4 class="info">INFORMAZIONI:</h4></div>
-        <div><p><b>Regista</b>: George Miller
-<b>Durata</b>: 2h <br>
-<b>Candidature</b>: Oscar miglior film</p></div><div class="row justify-content-start orari px-1">
-    <h4 class="prog">Orari di programmazione:</h3>
-    <div class="col-4 col-cst">11:30/13:05</div>
-    <div class="col-4 col-cst">13:30/15:05</div>
-    <div class="col-4 col-cst">15:30/17:05</div>
-    <div class="col-4 col-cst">17:30/19:05</div>
-    <div class="col-4 col-cst">20:30/22:05</div>
-    <div class="col-4 col-cst">22:30/00:05</div>
-</div>
-
-    </article>
-</section>
-<section class="row justify-content-around justify-content-center">
-    <h2 id="horror">HORROR</h2>
-    <article class="row art-cst justify-content-center my-5">
-      <h3>Venerdi 13</h3>
-        <div><img class="img-cst" src="./media/venerdi 13.jpg" alt=""></div>
-        <div><h4 class="my-3 trama">Trama:</h4></div>
-        <div><p class="fw-normal">Qualcuno o qualcosa massacra, uno dopo l'altro, tutti gli istruttori del campo Crystal Lake. Un classico del genere splatter.</p></div>
-        <div><h4 class="info">INFORMAZIONI:</h4></div>
-        <div><p><b>Regista</b>: Sean S. Cunningham <br>
-<b>Durata</b>: 1h 36m <br>
-<b>Budget</b>: 700.000 USD</p></div>
-<div class="row justify-content-start orari px-1">
-    <h4 class="prog">Orari di programmazione:</h3>
-    <div class="col-4 col-cst">11:30/13:05</div>
-    <div class="col-4 col-cst">13:30/15:05</div>
-    <div class="col-4 col-cst">15:30/17:05</div>
-    <div class="col-4 col-cst">17:30/19:05</div>
-    <div class="col-4 col-cst">20:30/22:05</div>
-    <div class="col-4 col-cst">22:30/00:05</div>
-</div>
-
-    </article>
-      <article class="row art-cst justify-content-center my-5">
-        <h3>The Conjuring</h3>
-        <div><img class="img-cst" src="./media/conjurinf.jpg" alt=""></div>
-        <div><h4 class="my-3 trama">Trama:</h4></div>
-        <div><p class="fw-normal">Nella nuova casa in cui si trasferisce la numerosa famiglia Perron si verificano strane apparizioni e rumori inquietanti fino a vere e proprie manifestazioni paranormali</p></div>
-        <div><h4 class="info">INFORMAZIONI:</h4></div>
-        <div><b>Regista</b>: James Wan <br>
-<b>Durata</b>: 1h 52m <br>
-<b>Budget</b>: 20 milioni USD</div>
-<div class="row justify-content-start orari px-1">
-    <h4 class="prog">Orari di programmazione:</h3>
-    <div class="col-4 col-cst">11:30/13:05</div>
-    <div class="col-4 col-cst">13:30/15:05</div>
-    <div class="col-4 col-cst">15:30/17:05</div>
-    <div class="col-4 col-cst">17:30/19:05</div>
-    <div class="col-4 col-cst">20:30/22:05</div>
-    <div class="col-4 col-cst">22:30/00:05</div>
-</div>
-
-    </article>
-      <article class="row art-cst justify-content-center my-5">
-        <h3>Obbligo o Verità</h3>
-        <div><img class="img-cst" src="./media/obbligo-o-verità.jpg" alt=""></div>
-        <div><h4 class="my-3 trama">Trama:</h4></div>
-        <div><p class="fw-normal">Olivia, Lucas e un gruppo di amici intraprendono un viaggio in Messico per un'ultima vacanza prima della laurea. Qui, uno sconosciuto coinvolge gli studenti in un gioco che si rivela essere pericoloso.</p></div>
-        <div><h4 class="info">INFORMAZIONI:</h4></div>
-        <div><p><b>Regista</b>: Jeff Wadlow
-<b>Durata</b>: 1h 48m <br>
-<b>Candidature</b>: Oscar miglior film</p></div><div class="row justify-content-start orari px-1">
-    <h4 class="prog">Orari di programmazione:</h3>
-    <div class="col-4 col-cst">11:30/13:05</div>
-    <div class="col-4 col-cst">13:30/15:05</div>
-    <div class="col-4 col-cst">15:30/17:05</div>
-    <div class="col-4 col-cst">17:30/19:05</div>
-    <div class="col-4 col-cst">20:30/22:05</div>
-    <div class="col-4 col-cst">22:30/00:05</div>
-</div>
-    </article>   
-</section>
-
+    <link rel="stylesheet" href="./btsrap.css">
+  </head>
   
-    <section class="row flex-wrap align-items-center my-1">
-        <article id="lcn" class="col-5 lcn flex-wrap justify-content-start align-items-center align-content-around py-3">
-            <div><h3 class="h3-cst mx-3">UNISCITI AL NOSTRO TEAM!</h3></div>
-            <div><h4 class="fs-5 h4-cst my-4 mx-3">Compila il form e ti ricontatteremo a breve!</h4></div>
-            <div class="w-100"><p class="email">Email:</p><input class="px-3 w-100" type="email"></div>
-            <div class="w-100"><p class="numero">Numero di telefono:</p><input class="px-3 w-100" type="number"></div>
-             <button type="button" class="btn btn-cst" data-bs-toggle="modal" data-bs-target="#Modale1">
-  Invia
-</button>
-
-<!-- Modal -->
- <div class="modale">
-<div class="modal fade" id="Modale1" tabindex="-1">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5">Grazie per aver compilato il form.</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</button>
-      </div>
-      <div class="modal-body">
-        I NOSTRI OPERATORI TI CONTATTERANNO IL PRIMA POSSIBILE!
-      </div>
-      <div class="modal-footer">
-        
-        <button type="button" class="btn btn-cst2" data-bs-dismiss="modal">Chiudi</button>
-      </div>
+  <body>
+<nav class="container-fluid nav1-cst text-light fw-bold">
+<div class="row">
+<div class="col-12 flex-wrap d-flex justify-content-center col-cst px-0 align-items-center">
+<img class="h-100 img-fluid ms-0" src="./media/THESPACE_CINEMA_Logo.svg.png" alt="">
+    <div class="mx-auto"><a href="">PROGRAMMAZIONE</a></div>
+    <div class="mx-auto">
+        <a class="dropdown dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">GENERI </a>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item py-2 text-light fw-semibold" href="#azione">AZIONE</a></li>
+            <li><a class="dropdown-item py-2 text-light fw-semibold" href="#horror">HORROR</a></li>
+            <li><a class="dropdown-item py-2 text-light fw-semibold" href="#commedia">COMMEDIA</a></li>
+        </ul>
+ </div>
+    <div class="mx-auto"><a href="#position">DOVE SIAMO</a></div>
+    <div><button class="me-5 btn-nav py-2 px-3 dropdown" type="button" data-bs-toggle="dropdown">Richiedi la tua space card!</button>
+    <ul class="dropdown-menu p-3">
+        <li class="dropdown-item"><form action=""><p class="py-0 my-0 text-light">Email</p><input type="email"></form></li>
+        <li class="dropdown-item"><form action=""><p class="py-0 my-0 text-light">Numero Cellulare</p><input type="number"></form></li>
+        <li><button type="button" class="btn btn-cst my-2" data-bs-toggle="modal" data-bs-target="#modale">Invia</button></li>
+    </ul>
     </div>
-  </div>
 </div>
+</div>
+
+</nav>
+
+<nav class="sidebar d-flex flex-column position-fixed right-0 my-1 py-5 pe-2 vh-100 text-light fw-medium align-items-start">
+<div><p class="my-5"><img class="bg-light" src="./svg.icone/lvc.svg" alt=""><a class="mx-2" href="#lcn"> Lavora con noi</a></p></div>
+<div><p class="my-5"><img class="bg-light" src="./svg.icone/posizione.svg" alt=""><a class="mx-2" href="#position">Dove siamo</a></p></div>
+<div><p class="my-5"><img class="bg-light" src="./svg.icone/telephone-fill.svg" alt=""><a class="mx-2" href="">Contatti</a></p></div>
+</nav>
+
+<div class="modal fade" id="modale" tabindex="-1">
+    <div class="modal-dialog modal-cst">
+        <div class="modal-content bg-black text-light">
+            <div class="modal-header">Riceverai presto la tua space card!</div>
+            <div class="modal-body">Riceverai tutte le istruzioni via email.</div>
+            <div class="modal-footer"><button type="button" data-bs-dismiss="modal" class="btn-cst py-1 px-3">Chiudi</button></div>
+            
+        </div>
+    </div>
+</div>
+<header class="container-fluid hero">
+    <div class="row vh-100 align-items-center">
+        <div class="col-12 text-center">
+            <h1 class="text-light fw-bold">PROGRAMMAZIONE</h1>
+        </div>
+    </div>
+
+</header>
+<main>
+    <div class="container text-light">
+        <h2 class="mt-5 pt-4 text-center generi fw-bold" id="commedia">COMMEDIA</h2>
+        
+    <section class="row justify-content-center w-100 m-0">
+       
+        <article class="col-cst-art col-12 col-md-7 col-lg-5 d-flex flex-column align-items-center mx-auto my-5"> 
+                <h3 class="tw-bolder">LORO CHI</h3>
+             <img class="img-art w-75" src="./media/Lorochi.jpg" alt="">
+             <h4>Trama:</h4>
+             <p class="fw-medium">Il giovane David viene assunto a Trento da una compagnia per lavorare alla pubblicità di un nuovo prodotto. Quando un barista, Marcello, lo invita “per un’innocentissima carbonara” a casa di due bellissime ragazze, David si ritroverà stordito su un letto senza portafoglio, senza lavoro e senza più una fidanzata.</p>
+            
+<div class="row justify-content-start px-1 fw-semibold">
+     <p><span class="crediti">Registi:</span> Fabio Bonifacci, Francesco Miccichè
+<span class="crediti"> Durata:</span> 1h 35m <br>
+<span class="crediti">Sceneggiatura: </span>Fabio Bonifacci, Marco Giallini, Edoardo Leo</p>
+    <h4 class="prog">Orari di programmazione:</h4>
+    <div class="col-4 col-lg-6 px-0"><p class="m-1 p-2 text-center orari">11:30/13:05</p></div>
+    <div class="col-4 col-lg-6 px-0"><p class="m-1 p-2 text-center orari">13:30/15:05</p></div>
+    <div class="col-4 col-lg-6 px-0"><p class="m-1 p-2 text-center orari">15:30/17:05</p></div>
+    <div class="col-4 col-lg-6 px-0"><p class="m-1 p-2 text-center orari">17:30/19:05</p></div>
+    <div class="col-4 col-lg-6 px-0"><p class="m-1 p-2 text-center orari">20:30/22:05</p></div>
+    <div class="col-4 col-lg-6 px-0"><p class="m-1 p-2 text-center orari">22:30/00:05</p></div>
+</div>
+</article>
+        <article class="col-cst-art col-12 col-md-7 col-lg-5 d-flex flex-column align-items-center mx-auto my-5"> 
+                <h3 class="tw-bolder">SANTO CIELO</h3>
+             <img class="img-art w-75" src="./media/ficarraepicone.jpg" alt="">
+             <h4>Trama:</h4>
+             <p class="fw-medium">Inviato sulla Terra con il compito di mettere incinta la donna prescelta a partorire un altro figlio di Dio, il goffo angelo Aristide finisce per toccare il grembo di Nicola, un professore di matematica siciliano.</p>
+            
+<div class="row justify-content-start px-1 fw-semibold mt-auto">
+     <p><span class="crediti">Registi:</span> Francesco Amato
+<span class="crediti"> Durata:</span> 1h 45m <br>
+<span class="crediti">Sceneggiatura: </span> Francesco Amato, Valentino Picone</p>
+    <h4 class="prog">Orari di programmazione:</h4>
+    <div class="col-4 col-lg-6 px-0"><p class="m-1 p-2 text-center orari">11:30/13:05</p></div>
+    <div class="col-4 col-lg-6 px-0"><p class="m-1 p-2 text-center orari">13:30/15:05</p></div>
+    <div class="col-4 col-lg-6 px-0"><p class="m-1 p-2 text-center orari">15:30/17:05</p></div>
+    <div class="col-4 col-lg-6 px-0"><p class="m-1 p-2 text-center orari">17:30/19:05</p></div>
+    <div class="col-4 col-lg-6 px-0"><p class="m-1 p-2 text-center orari">20:30/22:05</p></div>
+    <div class="col-4 col-lg-6 px-0"><p class="m-1 p-2 text-center orari">22:30/00:05</p></div>
+</div>
+</article>
+   <article class="col-cst-art col-12 col-md-7 col-lg-5 d-flex flex-column align-items-center mx-auto my-5"> 
+                <h3 class="tw-bolder">QUO VADO?</h3>
+             <img class="img-art w-75" src="./media/quovado.jpg" alt="">
+             <h4>Trama:</h4>
+             <p class="fw-medium">Un uomo che vive ancora con la famiglia, per timore dell'indipendenza, viene costretto a cambiare la propria vita e doversi adattare ad ogni lavoro, anche i più improbabili e pericolosi.</p>
+             
+<div class="row justify-content-start px-1 fw-semibold">
+    <p><span class="crediti">Registi:</span> Gennaro Nunziante
+<span class="crediti"> Durata:</span> 1h 26m <br>
+<span class="crediti">Sceneggiatura: </span>Checco Zalone, Gennaro Nunziante</p>
+    <h4 class="prog">Orari di programmazione:</h4>
+    <div class="col-4 col-lg-6 px-0"><p class="m-1 p-2 text-center orari">11:30/13:05</p></div>
+    <div class="col-4 col-lg-6 px-0"><p class="m-1 p-2 text-center orari">13:30/15:05</p></div>
+    <div class="col-4 col-lg-6 px-0"><p class="m-1 p-2 text-center orari">15:30/17:05</p></div>
+    <div class="col-4 col-lg-6 px-0"><p class="m-1 p-2 text-center orari">17:30/19:05</p></div>
+    <div class="col-4 col-lg-6 px-0"><p class="m-1 p-2 text-center orari">20:30/22:05</p></div>
+    <div class="col-4 col-lg-6 px-0"><p class="m-1 p-2 text-center orari">22:30/00:05</p></div>
 </div>
 </article>
 
 
 
+</section>
+ <h2 class="mt-5 pt-4 text-center generi fw-bold" id="azione">AZIONE</h2>
+        
+    <section class="row justify-content-center w-100 m-0">
+       
+        <article class="col-cst-art col-12 col-md-7 col-lg-5 d-flex flex-column align-items-center mx-auto my-5"> 
+                <h3 class="tw-bolder">BAD BOYS</h3>
+             <img class="img-art w-75" src="./media/bad boys.jpg" alt="">
+             <h4>Trama:</h4>
+             <p class="fw-medium">Due poliziotti di vecchia scuola, Mike Lowrey e Marcus Burnett, fanno squadra con una unità d'élite per fermare le attività di un pericoloso criminale di Miami a capo del locale cartello della droga</p>
+            
+<div class="row justify-content-start px-1 fw-semibold">
+     <p><span class="crediti">Registi:</span> Adil El Arbi, Billal Fallah 
+<span class="crediti"> Durata:</span> 1h 53m <br>
+<span class="crediti">Budget: </span>90 MILIONI USD</p>
+    <h4 class="prog">Orari di programmazione:</h4>
+    <div class="col-4 col-lg-6 px-0"><p class="m-1 p-2 text-center orari">11:30/13:05</p></div>
+    <div class="col-4 col-lg-6 px-0"><p class="m-1 p-2 text-center orari">13:30/15:05</p></div>
+    <div class="col-4 col-lg-6 px-0"><p class="m-1 p-2 text-center orari">15:30/17:05</p></div>
+    <div class="col-4 col-lg-6 px-0"><p class="m-1 p-2 text-center orari">17:30/19:05</p></div>
+    <div class="col-4 col-lg-6 px-0"><p class="m-1 p-2 text-center orari">20:30/22:05</p></div>
+    <div class="col-4 col-lg-6 px-0"><p class="m-1 p-2 text-center orari">22:30/00:05</p></div>
+</div>
+</article>
+        <article class="col-cst-art col-12 col-md-7 col-lg-5 d-flex flex-column align-items-center mx-auto my-5"> 
+                <h3 class="tw-bolder">A WORKING MAN</h3>
+             <img class="img-art w-75" src="./media/jason.jpg" alt="">
+             <h4>Trama:</h4>
+             <p class="fw-medium">Levon Cade, ex militare, ora operaio edile, cerca di salvare la figlia rapita del suo capo, che considera famiglia. La sua missione svela una rete di corruzione inaspettata.</p>
+            
+<div class="row justify-content-start px-1 fw-semibold">
+     <p><span class="crediti">Registi:</span> David Ayer
+<span class="crediti"> Durata:</span> 1h 56m <br>
+<span class="crediti">Budget: </span> 20 MILIONI USD</p>
+    <h4 class="prog">Orari di programmazione:</h4>
+    <div class="col-4 col-lg-6 px-0"><p class="m-1 p-2 text-center orari">11:30/13:05</p></div>
+    <div class="col-4 col-lg-6 px-0"><p class="m-1 p-2 text-center orari">13:30/15:05</p></div>
+    <div class="col-4 col-lg-6 px-0"><p class="m-1 p-2 text-center orari">15:30/17:05</p></div>
+    <div class="col-4 col-lg-6 px-0"><p class="m-1 p-2 text-center orari">17:30/19:05</p></div>
+    <div class="col-4 col-lg-6 px-0"><p class="m-1 p-2 text-center orari">20:30/22:05</p></div>
+    <div class="col-4 col-lg-6 px-0"><p class="m-1 p-2 text-center orari">22:30/00:05</p></div>
+</div>
+</article>
+   <article class="col-cst-art col-12 col-md-7 col-lg-5 d-flex flex-column align-items-center mx-auto my-5"> 
+                <h3 class="tw-bolder">LORO CHI</h3>
+             <img class="img-art w-75" src="./media/madmax.jpg" alt="">
+             <h4>Trama:</h4>
+             <p class="fw-medium">>Dopo una guerra nucleare, il mondo si è trasformato in un deserto e dell'umanità non è rimasto molto. Due ribelli in fuga potrebbero essere in grado di ristabilire l'ordine.</p>
+             
+<div class="row justify-content-start px-1 fw-semibold">
+    <p><span class="crediti">Registi:</span> George Miller
+<span class="crediti"> Durata:</span> 2h <br>
+<span class="crediti">Candidature: </span>Oscar miglior film</p>
+    <h4 class="prog">Orari di programmazione:</h4>
+    <div class="col-4 col-lg-6 px-0"><p class="m-1 p-2 text-center orari">11:30/13:05</p></div>
+    <div class="col-4 col-lg-6 px-0"><p class="m-1 p-2 text-center orari">13:30/15:05</p></div>
+    <div class="col-4 col-lg-6 px-0"><p class="m-1 p-2 text-center orari">15:30/17:05</p></div>
+    <div class="col-4 col-lg-6 px-0"><p class="m-1 p-2 text-center orari">17:30/19:05</p></div>
+    <div class="col-4 col-lg-6 px-0"><p class="m-1 p-2 text-center orari">20:30/22:05</p></div>
+    <div class="col-4 col-lg-6 px-0"><p class="m-1 p-2 text-center orari">22:30/00:05</p></div>
+</div>
+</article>
 
-<article class="col-md-6 col-12 pos-cst">
-    <h3>Dove siamo:</h3>
+
+
+</section>
+ <h2 class="mt-5 pt-4 text-center generi fw-bold" id="horror">HORROR</h2>
+        
+    <section class="row justify-content-center w-100 m-0">
+       
+        <article class="col-cst-art col-12 col-md-7 col-lg-5 d-flex flex-column align-items-center mx-auto my-5"> 
+                <h3 class="tw-bolder">THE CONJURING</h3>
+             <img class="img-art w-75" src="./media/conjurinf.jpg" alt="">
+             <h4>Trama:</h4>
+             <p class="fw-medium">Nella nuova casa in cui si trasferisce la numerosa famiglia Perron si verificano strane apparizioni e rumori inquietanti fino a vere e proprie manifestazioni paranormali</p>
+            
+<div class="row justify-content-start px-1 fw-semibold">
+     <p><span class="crediti">Registi:</span> James Wan
+<span class="crediti"> Durata:</span> 1h 35m <br>
+<span class="crediti">Budget: </span>40 MILIONI USD</p>
+    <h4 class="prog">Orari di programmazione:</h4>
+    <div class="col-4 col-lg-6 px-0"><p class="m-1 p-2 text-center orari">11:30/13:05</p></div>
+    <div class="col-4 col-lg-6 px-0"><p class="m-1 p-2 text-center orari">13:30/15:05</p></div>
+    <div class="col-4 col-lg-6 px-0"><p class="m-1 p-2 text-center orari">15:30/17:05</p></div>
+    <div class="col-4 col-lg-6 px-0"><p class="m-1 p-2 text-center orari">17:30/19:05</p></div>
+    <div class="col-4 col-lg-6 px-0"><p class="m-1 p-2 text-center orari">20:30/22:05</p></div>
+    <div class="col-4 col-lg-6 px-0"><p class="m-1 p-2 text-center orari">22:30/00:05</p></div>
+</div>
+</article>
+        <article class="col-cst-art col-12 col-md-7 col-lg-5 d-flex flex-column align-items-center mx-auto my-5"> 
+                <h3 class="tw-bolder">Venerdi 13</h3>
+             <img class="img-art w-75" src="./media/venerdi 13.jpg" alt="">
+             <h4>Trama:</h4>
+             <p class="fw-medium">Qualcuno o qualcosa massacra, uno dopo l'altro, tutti gli istruttori del campo Crystal Lake. Un classico del genere splatter.</p>
+             <div class="row justify-content-start px-1 fw-semibold">
+    <p><span class="crediti">Registi:</span> Sean S. Cunningham
+<span class="crediti"> Durata:</span> 1h 35m <br>
+<span class="crediti">Budget: </span>700.000 USD</p>
+    <h4 class="prog">Orari di programmazione:</h4>
+    <div class="col-4 col-lg-6 px-0"><p class="m-1 p-2 text-center orari">11:30/13:05</p></div>
+    <div class="col-4 col-lg-6 px-0"><p class="m-1 p-2 text-center orari">13:30/15:05</p></div>
+    <div class="col-4 col-lg-6 px-0"><p class="m-1 p-2 text-center orari">15:30/17:05</p></div>
+    <div class="col-4 col-lg-6 px-0"><p class="m-1 p-2 text-center orari">17:30/19:05</p></div>
+    <div class="col-4 col-lg-6 px-0"><p class="m-1 p-2 text-center orari">20:30/22:05</p></div>
+    <div class="col-4 col-lg-6 px-0"><p class="m-1 p-2 text-center orari">22:30/00:05</p></div>
+</div>
+</article>
+   <article class="col-cst-art col-12 col-md-7 col-lg-5 d-flex flex-column align-items-center mx-auto my-5"> 
+                <h3 class="tw-bolder">OBBLIGO O VERITÀ</h3>
+             <img class="img-art w-75" src="./media/obbligo-o-verità.jpg" alt="">
+             <h4>Trama:</h4>
+             <p class="fw-medium">Olivia, Lucas e un gruppo di amici intraprendono un viaggio in Messico per un'ultima vacanza prima della laurea. Qui, uno sconosciuto coinvolge gli studenti in un gioco che si rivela essere pericoloso.</p>
+             <div class="row justify-content-start px-1 fw-semibold">
+    <p><span class="crediti">Registi:</span>Jeff Wadlow
+<span class="crediti"> Durata:</span> 1h 35m <br>
+<span class="crediti">Budget: </span>30 MILIONI USD</p>
+    <h4 class="prog">Orari di programmazione:</h4>
+    <div class="col-4 col-lg-6 px-0"><p class="m-1 p-2 text-center orari">11:30/13:05</p></div>
+    <div class="col-4 col-lg-6 px-0"><p class="m-1 p-2 text-center orari">13:30/15:05</p></div>
+    <div class="col-4 col-lg-6 px-0"><p class="m-1 p-2 text-center orari">15:30/17:05</p></div>
+    <div class="col-4 col-lg-6 px-0"><p class="m-1 p-2 text-center orari">17:30/19:05</p></div>
+    <div class="col-4 col-lg-6 px-0"><p class="m-1 p-2 text-center orari">20:30/22:05</p></div>
+    <div class="col-4 col-lg-6 px-0"><p class="m-1 p-2 text-center orari">22:30/00:05</p></div>
+</div>
+</article>
+
+</section>
+</div>
+
+<section class="container-fluid">
+    <div class="row text-light mb-5 justify-content-around">
+        <article id="lcn" class="lcn lcn-cst col-12 col-md-4 d-flex flex-column justify-content-center align-items-center py-4">
+            <h3 class="fw-bold">LAVORA CON NOI!</h3>
+            <p class="my-1">Email:</p>
+<input class="inp me-0" type="email">
+<p class="my-1">Numero Cell:</p>
+<input class="inp me-0" type="number">
+<button class="btn-cst py-2 px-4 mt-3" type="button" data-bs-toggle="modal" data-bs-target="#modale2">Invia</button>
+        </article>
+    
+    <article class="col-md-4 col-12 pos-cst d-flex flex-column align-items-center py-3 px-3 mr-5 mt-5">
+    <h3 class="fw-bold">Dove siamo:</h3>
 <a target="_blank" href="https://www.google.com/maps/dir//The+Space+Cinema+-+Surbo,+Via+Benzi,+5,+73010+Surbo+LE/@40.3752083,18.1438404,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x13442eb4e302ad7d:0x9da5cb15af027f15!2m2!1d18.146136!2d40.37543?entry=ttu&g_ep=EgoyMDI2MDIxMS4wIKXMDSoASAFQAw%3D%3D"><img id="position" class="posizione img-fluid" src="./media/Screenshot 2026-02-16 133011.png" alt=""></a>
         </article>
-        
+    </div>
 </section>
-
-
-
-    </main>
-    <nav class="navb-trigger mx-0">
-    <div class="container-fluid navbar-bott justify-content-around fw-bold">
-        <a href="#lcn">Lavora con noi</a>
-        <a href="">Offerte</a>
-        <a href="">Programmazione</a>
-        <a href="">Contatti</a>
+<nav class="container-fluid">
+    <div class="row text-light text-center bar-bott">
+        <div class="col-4 bott-bar1">
+            <p class="m-2 p-2"><a href="#lcn">Lavora con noi!</a></p>
+        </div>
+        <div class="col-4 bott-bar2">
+            <p class="m-2 p-2"><a href="#contatti">Contatti</a></p>
+        </div>
+        <div class="col-4 bott-bar3">
+            <p class="m-2 p-2"><a href="#position">Dove siamo</a></p>
+        </div>
     </div>
 </nav>
-<footer>
-    <div class="row align-items-center py-3">
-        <div class="col-3 ft-cst"><p>P.IVA: 983872776</p></div>
-        <div class="col-3 ft-cst"><p>FOUNDER: Emanuele Scagliarini</p></div>
-        <div class="col-3 ft-cst"><p>PROFILO IG: @Thespacecinema <i class="bi bi-instagram"></i></p></div>
+
+
+</main>
+
+<footer class="container-fluid">
+    <div class="row bg-black text-light py-2 ft">
+        <div class="col-12 col-md-4 mb-3">
+            <p class="m-0 ft-p">P.IVA: 9239782687</p>
+            <p class="m-0 ft-p">Sede: Lecce (LE) <img src="./svg.icone/posizione.svg" alt=""></p>
+            <p class="m-0 ft-p">CAP: 72100</p>
+        </div>
+        <div class="col-12 col-md-4 mb-3 d-flex flex-column">
+            <p class="m-0 ft-p">CONTATTI:</p>
+            <p class="m-0 ft-p">Cell: 33262888768 <img src="./svg.icone/telephone-fill.svg" alt=""></p>
+            <p class="m-0 ft-p">Email: Emaemaema@gmail.com <img src="./svg.icone/gmail.svg" alt=""></p>
+        </div>
+        <div class="col-12 col-md-4 d-flex flex-column">
+            <p class="m-0 ft-p">SOCIAL: <img src="./svg.icone/social.svg" alt=""></p>
+            <p class="m-0 ft-p">INSTAGRAM: @emaemaema <img src="./svg.icone/instagram.svg" alt=""></p>
+            <p class="m-0 ft-p">FACEBOOK: @emaemaema <img src="./svg.icone/facebook.svg" alt=""></p>
+        </div>
     </div>
 </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<div class="modal fade" id="modale2" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">Grazie per aver compilato il form!</div>
+            <div class="modal-body">I nostri operatori ti contatteranno il prima possibile.</div>
+            <div class="modal-footer"><button class="py-2 px-4 btn-cst" type="button" data-bs-dismiss="modal">Chiudi</button></div>
+        </div>
+    </div>
+</div>
 
-</body>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
 </html>
