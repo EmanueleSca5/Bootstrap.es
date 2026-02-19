@@ -1,64 +1,40 @@
-body{background: linear-gradient(rgba(17, 16, 16, 0.973) 15%, transparent 20%) , url(./media/sfondo-griglia-nera.jpg); margin-top: 0px;}
-nav{background-color: rgb(0, 0, 0);}
-header{letter-spacing: 5px;}
-.hero{background: linear-gradient(transparent 70%,rgba(17, 16, 16, 0.973) 90%), url(./media/sfondio-nero.jpg);
-background-position: center; background-size: cover;}
-
-.logo{height: 12vh;width: 12vh;}
-.btn1{border-radius: 20px; background-color: rgb(255, 166, 0);font-weight: 600;padding-left: 20px;padding-right: 20px; border: inherit;}
-a{text-decoration: none;color: white;}
-.dropdown-item{color: rgb(255, 255, 255);font-weight: 600;}
-.dropdown-item:hover{background-color: black !important;color: white;}
-input{background-color: white !important;}
-
-.dropdown-menu{background-color: rgba(0, 0, 0, 0.849);padding-top: 20px;flex-wrap: wrap;}
-input:hover{background-color: inherit;}
-ul{padding-top: 30px;}
-.nav-cst{width: 2vw;opacity: 0;display: flex;flex-direction: column;flex-wrap: wrap;font-size: small;font-weight: 600; position: fixed; background-color: rgba(0, 0, 0, 0.486); transition: 0.7s;z-index: 20;height: 100vh;}
-.sidebar:hover .nav-cst{opacity: 1;width: 130px;}
-.item-navcol{margin-top: 7vh;}
-.sidebar{background-color: rgb(243, 138, 0);height: 4vh;min-width: 2.0vw;position: fixed;z-index: 2;}
-.first{margin-top: 5vh;}
-header{color: rgb(255, 166, 0);}
-h2{color: rgb(255, 166, 0); padding: 5vh;border-radius: 20px; font-weight: 650;}
-h3{color: white; font-weight: bold; text-align: center;}
-.img-cst{height: 100%;width: 100%; padding: 0vh 2vw;}
-.art-cst{background-color: rgba(0, 0, 0, 0.753);padding: 2vh 2vw;border-radius: 40px; width: 400px;color: white;}
-.info, .trama{color: rgb(255, 166, 0);}
-.col-cst{border: 1px solid rgba(255, 255, 255, 0.521);}
-.prog{padding: 0%;color: rgb(255, 166, 0)}
-.orari{border: 2px solid rgba(255, 255, 255, 0.521);border-radius: 10px;margin-top: 10px;}
-.lcn{color: rgb(255, 166, 0);background-color: rgba(0, 0, 0, 0.726);padding: 3vh 1vw;
-    font-size: medium;margin-top: 40px;border-radius: 20px;margin-bottom: 60px;display: none; min-width: 400px; margin-left: auto;margin-right: auto;}
-    #lcn:target{display: flex !important;}
-.gmail{margin-left: 20px;}
-.email{margin-right: 10vw;margin-left: 2vw;}
-.numero{margin-right: 10vw;margin-left: 2vw;margin-top: 5px;}
-section{flex-wrap: wrap;}
-input{max-width: 50% ;margin-left: 20px;}
-
-.h4-cst{color: white;}
-.h3-cst{color: rgb(255, 166, 0);}
-.btn-cst{ margin-left: 15px;margin-top: 20px; background-color: rgb(255, 166, 0);}
-.btn-cst:hover{background-color: rgb(255, 166, 0);}
-.modal-body, .modal-header, .modal-footer{background-color: rgba(255, 255, 255, 0.986);color: rgb(2, 1, 1)
-    ;border: solid 1px rgb(75, 75, 75);}
-.modal-body{font-weight: 500;}
-.btn-cst2{background-color: white;}
-.pos-cst{padding: 20px; max-width: 40vw;height: auto; background-color: rgba(0, 0, 0, 0.63);border-radius: 100px;margin-bottom: 20px;margin: auto;}
-.posizione{height: auto;width: 100%; border-radius: 100px;}
+body{background: linear-gradient(rgb(0, 0, 0) 8%, transparent 15%), url(./media/sfondo-griglia-nera.jpg);}
+.logo{width: 100%;height: 100%;}
+.col-cst{height: 12vh;}
+.nav1-cst{background-color: black; position: fixed; z-index: 1000;}
+a{color: inherit; text-decoration: none;}
+.btn-nav{background-color: rgb(255, 166, 0);border: none;border-radius: 20px;}
+.dropdown-menu{background-color: rgba(0, 0, 0, 0.623);}
+.btn-cst{border: none;border-radius: 20px;background-color: rgb(255, 166, 0);}
+.hero{background: linear-gradient(transparent, rgb(0, 0, 0) 90%) , url(./media/sfondio-nero.jpg); background-repeat: no-repeat;
+background-size: cover; letter-spacing: 15px;
+}
+.sidebar{background-color: rgba(0, 0, 0, 0); transition: 0.4s; width: 20px; white-space: nowrap; overflow: hidden;}
+.sidebar:hover{width: 140px;}
+.generi{letter-spacing: 10px;color: rgb(255, 166, 0);}
 
 
-.nav-trigger{color: white; font-weight: 600;}
-.navbar-bott{display: none;padding: 20px;margin-top: 30px;border-bottom: 2px solid white;}
-footer{background-color: rgb(0, 0, 0);color: rgb(255, 166, 0);padding: 3px;font-weight: 500; clear: both;}
-.ft-cst{border-left: 2px solid white;}
-p{margin: 0;}
+.col-cst-art{background-color: rgba(0, 0, 0, 0.705);border-radius: 30px;}
+.orari{border: 2px solid white;border-radius: 20px;}
+.img-art{border-radius: 20px; transition: 0.8s;}
+.img-art:hover{transform: scale(1.01);}
+.crediti, .prog{color: rgb(255, 166, 0); font-weight: 700;}
+#lcn{background-color: rgba(0, 0, 0, 0.644); border-radius: 30px; display: none !important;}
+#lcn:target{display: flex !important;}
+.btn-cst{background-color: rgb(255, 166, 0); border: none; border-radius: 20px;}
+.pos-cst{background-color: rgba(0, 0, 0, 0.623);border-radius: 30px;}
+.posizione{border-radius: 50px;}
+.modal-cst{background-color: rgba(0, 0, 0, 0.678);}
+.icon-list{background-color: inherit;border: none;}
+.bott-bar1{border-right: 2px solid white;border-left: 2px solid white;}
+.bott-bar3{border-right: 2px solid white;border-left: 2px solid white;}
+.bar-bott{background-color: rgba(0, 0, 0, 0.651);display: none;}
+.ft{border-top: 2px solid white; background-color: rgba(0, 0, 0, 0.664);}
+.ft-p{color: rgb(255, 255, 255); font-weight: 600;}
 
-
-
-@media screen and (max-width: 780px) {.nav-cst{display: none;}
-.sidebar{display:  none;} .navbar-bott{display: flex;}
-.nav-top{position: relative !important;} input{max-width: 80%;} .lcn{margin-left: auto; margin-right: auto;}
-.barra{display: none;} 
+@media screen and (max-width: 1300px) { .nav1-cst{position: relative;}
+.hero{letter-spacing: 7px;} 
+.sidebar{display: none !important;}
+.bar-bott{display: flex;}
+    
 }
